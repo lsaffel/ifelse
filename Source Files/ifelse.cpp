@@ -54,7 +54,7 @@ int main()
     // then the {} aren't necessary
 
         if (a==b && b==c)
-        cout << "Equilateral triangle";
+            cout << "Equilateral triangle";
         else
         {
             if (a != b && a !=c && b != c)
