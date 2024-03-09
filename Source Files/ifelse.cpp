@@ -34,19 +34,31 @@ int main()
     cout << "a, b, c:";
     cin >> a >> b >> c;
 
-    if (a==b && b==c)
-    {
+    // if (a==b && b==c)
+    // {
+    //     cout << "Equilateral triangle";
+    // }
+    // else{
+    //     if (a != b && a !=c && b != c)
+    //     {
+    //         cout << "Scalene triangle";
+    //     }
+    //     else
+    //     {
+    //         cout << "Isosceles triangle";
+    //     }
+    // }
+
+    // same code as above, but with several {} removed. If it's one line,
+    // then the {} aren't necessary
+
+        if (a==b && b==c)
         cout << "Equilateral triangle";
-    }
-    else{
-        if (a != b && a !=c && b != c)
-        {
-            cout << "Scalene triangle";
-        }
         else
         {
-            cout << "Isosceles triangle";
+            if (a != b && a !=c && b != c)
+                cout << "Scalene triangle";
+            else
+                cout << "Isosceles triangle";
         }
     }
-
-}
