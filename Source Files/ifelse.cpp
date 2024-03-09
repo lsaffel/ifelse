@@ -49,7 +49,8 @@ int main()
     //     }
     // }
 
-    // same code as above, but with several {} removed. If it's one line,
+    // same code as above, but with several {} removed. If 
+    // what is in the if or else is only one line (statement),
     // then the {} aren't necessary
 
         if (a==b && b==c)
