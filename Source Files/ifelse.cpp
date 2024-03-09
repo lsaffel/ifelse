@@ -9,17 +9,44 @@ int main()
     // cout << 2 % 2 << std::endl;     // result is 0 = remainder from 2 / 2
     // cout << 7 % 5 << std::endl;     // result is 2 = remainder from 7 / 5
 
-    int number;
-    cout << "Please enter a whole number:";
-    cin >> number;
+    // a simple if else statement
+    // int number;
+    // cout << "Please enter a whole number:";
+    // cin >> number;
 
-    if (number % 2 == 0) 
+    // if (number % 2 == 0) 
+    // {
+    //     cout << "You have entered an even number." << endl;
+    // }
+    // else
+    // {
+    //     cout << "You have entered an odd number." << endl;
+    // }
+    // cout << "Thanks. Bye.";
+    // --------------- next if else problem ----------------------------
+    // user enters the side lengths of a triangle (a,b,c)
+    // program should write out whether that triangle is equilateral, isosceles or scalene.
+    // equilateral: has all 3 sides the same length
+    // iscosceles: has 2 sides the same length
+    // scalene: has all 3 sides of a different length
+
+    float a, b, c;
+    cout << "a, b, c:";
+    cin >> a >> b >> c;
+
+    if (a==b && b==c)
     {
-        cout << "You have entered an even number." << endl;
+        cout << "Equilateral triangle";
     }
-    else
-    {
-        cout << "You have entered an odd number." << endl;
+    else{
+        if (a != b && a !=c && b != c)
+        {
+            cout << "Scalene triangle";
+        }
+        else
+        {
+            cout << "Isosceles triangle";
+        }
     }
-    cout << "Thanks. Bye.";
+
 }
